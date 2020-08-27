@@ -7,10 +7,10 @@ const Transaction = () => {
             <hr />
             <form>
                 <p>Text</p>
-                <input type="text" />
+                <input placeholder="Enter Text ..." type="text" />
                 <p>Amount</p>
                 <p>(negative - expense, positive - income)</p>
-                <input type="number" /> <br /> <br />
+                <input type="number" placeholder="Enter amount ..." /> <br /> <br />
                 <button>Add Transaction</button>
             </form>
         </div>
