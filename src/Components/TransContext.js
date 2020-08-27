@@ -1,11 +1,7 @@
 import React, { createContext, useReducer } from "react";
 import TransReducer from "./TransReducer";
 
-const initialTrans = [
-    { amount: 500, desc: "cash" },
-    { amount: -500, desc: "camera" },
-    { amount: -100, desc: "book" },
-]
+const initialTrans = [];
 
 export const TransContext = createContext(initialTrans);
 
@@ -16,8 +12,8 @@ export const TransProvider = ({ children }) => {
         dispatch({
             type: 'add',
             payload: {
-                amount: transObj.desc,
-                desc: transObj.amount
+                amount: transObj.amount,
+                desc: transObj.desc
             }
         })
     }
