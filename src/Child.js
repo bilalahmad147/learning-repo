@@ -4,12 +4,12 @@ const Child = () => {
 
     useEffect(() => {
         loadData();
-    }, [])
+    },[])
 
     const loadData = async () => {
-        const response = await fetch("https://opentdb.com/api.php?amount=10&type=multiple");
-        const data = await response.json();
-        console.log(data.results);
+        const respose = await fetch('https://covid19.mathdro.id/api');
+        const data = await respose.json();
+        console.log(data.confirmed);
     }
 
     return (
