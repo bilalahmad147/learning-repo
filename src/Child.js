@@ -1,21 +1,14 @@
 import React from 'react';
-import LoginPage from './LoginPage';
+import Header from './Header';
+import Screen from './Screen'
 
 const Child = () => {
 
-    // useEffect(() => {
-    //     loadData();
-    // },[])
-
-    // const loadData = async () => {
-    //     const respose = await fetch('https://covid19.mathdro.id/api');
-    //     const data = await respose.json();
-    //     console.log(data.confirmed);
-    // }
-
     return (
         <div>
-            <LoginPage />
+            <Header />
+            <br />
+            <Screen />
         </div>
     )
 }
