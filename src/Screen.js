@@ -35,14 +35,14 @@ const Screen = () => {
     return (
         <div className={classes.root}>
             <Grid container spacing={3}>
-                {globalData.map((key, ind) => {
+                {Object.keys(globalData).map((key, ind) => {
                     return (
                         <Grid item xs={12} sm={4} key={ind}>
                             <Paper
                                 className={classes.paper}
                                 elevation={3}>
                                 <h3 className={classes.title}>
-                                    {key.replace(/_/g, ' ')}
+                                    {key.replace(/_/g, ' ').toUpperCase()}
                                 </h3>
                                 <h3>{globalData[key]}</h3>
                             </Paper>
